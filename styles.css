@@ -1,0 +1,116 @@
+:root {
+	--default: black;
+}
+
+body {
+	background-image: url(res/bg.png);
+    background-size: cover;
+    background-position: 0 -30px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    margin: 0;
+}
+
+* {
+	user-select: none;
+}
+
+.socialnets {
+	position: absolute;
+    color: white;
+    font-family: monospace;
+    font-size: 25px;
+    text-transform: uppercase;
+    top: 45%;
+    left: 50%;
+    translate: -50%;
+	width: 50%;
+    height: 2%;
+}
+
+.nets {
+	background: black;
+    border: solid white 4px;
+    border-radius: 0px 20px;
+    margin: 15px;
+    padding: 10px 10px 10px 50px;
+	transition: 0.25s;
+	text-align: center;
+	height: 200%;
+    align-content: center;
+}
+
+.nets:hover {
+	scale: 1.1;
+}
+
+.net1:before {
+	content: "";
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-image: url(https://www.furaffinity.net/themes/beta/img/banners/fa_logo.png?v2);
+    background-size: cover;
+    background-repeat: no-repeat;
+	translate: -100% -10%;
+}
+
+.net2:before {
+	content: "";
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-image: url(https://abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg);
+    filter: invert(1);
+    background-size: cover;
+    background-repeat: no-repeat;
+	translate: -100% -10%;
+}
+
+.net3:before {
+	content: "";
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-image: url(https://c5.patreon.com/external/favicon/rebrand/favicon-32.png?v=af5597c2ef);
+    background-size: cover;
+    background-repeat: no-repeat;
+	translate: -100% -10%;
+}
+
+.bgoverlay {
+	position: fixed;
+    inset: 0;
+    backdrop-filter: blur(10px) brightness(0.75);
+	z-index: -999;
+}
+
+.toplogo {
+	display: flex;
+    height: 25%;
+    justify-content: center;
+}
+
+.waitoside {
+	height: 25%;
+    display: flex;
+    position: fixed;
+    top: 32%;
+    translate: 0 -50%;
+    scale: -1 1;
+    left: 0;
+}
+
+.twitter-widget {
+	width: 100%;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    background: #a5a5a5;
+    border: solid;
+    top: 1%;
+    position: absolute;
+    right: -15%;
+    translate: -50%;
+}
